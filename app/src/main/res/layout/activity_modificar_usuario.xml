@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTable">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="60dp"
+                    android:paddingTop="20dp"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="NOMBRE DE USUARIO:"
+                    android:textColor="@color/colorLabelText"
+                    android:gravity="bottom"
+                    android:id="@+id/lblNombreUsuario" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="356dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:inputType="textPersonName"
+                    android:hint="Nombre de usuario"
+                    android:textColorHint="@color/colorHintText"
+                    android:textColor="@color/colorNormalText"
+                    android:ems="10"
+                    android:id="@+id/txtNombreUsuario"
+                    android:singleLine="true"
+                    android:enabled="false" />
+
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTable">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:paddingTop="20dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="CONTRASEÑA:"
+                    android:textColor="@color/colorLabelText"
+                    android:id="@+id/lblContrasenia" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:id="@+id/txtContrasenia"
+                    android:hint="Nueva contraseña"
+                    android:textColor="@color/colorNormalText"
+                    android:textColorHint="@color/colorHintText"
+                    android:layout_gravity="top" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:layout_margin="5dp"
+                    android:id="@+id/txtConfirmarContrasenia"
+                    android:hint="Confirmar contraseña"
+                    android:textColor="@color/colorNormalText"
+                    android:textColorHint="@color/colorHintText"
+                    android:layout_gravity="top" />
+            </TableRow>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Actualizar"
+                    android:id="@+id/btnActualizarUsuario"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:onClick="onClickActualizarUsuario"
+                    android:textColor="@color/colorButtonText"
+                    android:enabled="true" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

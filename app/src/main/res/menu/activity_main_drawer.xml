@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Programa">
+        <menu>
+            <item
+                android:id="@+id/nav_registrar_programa"
+                android:title="Registrar Programa" />
+            <item
+                android:id="@+id/nav_consultar_series"
+                android:title="Consultar Programas" />
+        </menu>
+    </item>
+    
+    <item android:title="Canal">
+        <menu>
+
+            <item
+                android:id="@+id/nav_registrar_canal"
+                android:title="Registrar Canal" />
+
+            <item
+                android:id="@+id/nav_consultar_canal"
+                android:title="Consultar Canal" />
+        </menu>
+    </item>
+
+    <item android:title="Genero">
+        <menu>
+
+            <item
+                android:id="@+id/nav_registrar_genero"
+                android:title="Registrar Genero" />
+
+            <item
+                android:id="@+id/nav_eliminar_genero"
+                android:title="Eliminar Genero" />
+        </menu>
+    </item>
+
+    <item android:title="Agenda">
+        <menu>
+            <item
+                android:id="@+id/nav_consultar_peliculas_agenda"
+                android:title="Consultar programas" />
+        </menu>
+    </item>
+
+    <item android:title="Sesión">
+        <menu>
+
+            <item
+                android:id="@+id/nav_actualizar_user"
+                android:title="Actualizar Datos" />
+            <item
+                android:id="@+id/nav_cerrar"
+                android:title="Cerrar sesión" />
+
+
+        </menu>
+    </item>
+
+
+
+
+
+
+
+</menu>

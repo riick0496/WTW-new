@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAgregarGenero"
+        android:hint="Genero"
+        android:textColor="@color/colorNormalText"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorHintText"
+        android:layout_weight="0.94" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:id="@+id/btnAgregarGenero"
+        android:layout_gravity="right"
+        android:textColor="@color/colorButtonText"
+        android:onClick="onClickAgregarGenero" />
+
+</LinearLayout>

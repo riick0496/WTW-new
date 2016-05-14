@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WTW</string>
+    <string name="key_active_session">sesionActiva</string>
+    <string name="key_nombre_usuario_session">nombreUsuario</string>
+    <string name="key_id_usuario_session">idUsuario</string>
+    <string name="file_user_info">userInfo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configuración</string>
+</resources>

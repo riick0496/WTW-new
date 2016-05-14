@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBuscar"
+                android:hint="Introduzca un nombre"
+                android:textColor="@color/colorNormalText"
+                android:textColorHint="@color/colorHintText"
+                android:inputType="textPersonName"
+                android:layout_weight="0.90" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buscar"
+                android:id="@+id/btnBuscar"
+                android:onClick="onClickBuscar"
+                android:textColor="@color/colorButtonText"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_consulta_pelicula"
+            android:scrollbars="vertical"
+            android:textColor="@color/colorNormalText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

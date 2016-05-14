@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activities.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar Película"
+        android:id="@+id/btnConsultar"
+        android:nestedScrollingEnabled="true"
+        android:textColor="@color/colorButtonText"
+        android:onClick="onClickConsultar"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"
+        android:layout_above="@+id/btnAgregarPrograma"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar género"
+        android:id="@+id/btnGenero"
+        android:nestedScrollingEnabled="true"
+        android:onClick="onClickAgregarGenero"
+        android:textColor="@color/colorButtonText"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/btnAgregarPrograma"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar programa"
+        android:id="@+id/btnAgregarPrograma"
+        android:onClick="onClickAgregarPrograma"
+        android:textColor="@color/colorButtonText"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/btnConsultar"
+        android:layout_alignEnd="@+id/btnConsultar" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"
+        android:layout_below="@+id/btnAgregarPrograma"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Género"
+        android:id="@+id/btnEliminarGenero"
+        android:textColor="@color/colorButtonText"
+        android:onClick="onClickBtnEliminarGenero"
+        android:layout_below="@+id/btnGenero"
+        android:layout_alignLeft="@+id/btnGenero"
+        android:layout_alignStart="@+id/btnGenero" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar Serie"
+        android:id="@+id/button"
+        android:nestedScrollingEnabled="true"
+        android:textColor="@color/colorButtonText"
+        android:onClick="onClickConsultarSerie"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:id="@+id/btnGestionUsuario"
+        android:nestedScrollingEnabled="true"
+        android:textColor="@color/colorButtonText"
+        android:onClick="onClickGestionUsuario"
+        android:layout_below="@+id/btnEliminarGenero"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar canal"
+        android:id="@+id/btnAgregarCanal"
+        android:nestedScrollingEnabled="true"
+        android:onClick="onClickAgregarCanal"
+        android:textColor="@color/colorButtonText"
+        android:layout_below="@+id/btnAgregarPrograma"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar Canal"
+        android:id="@+id/btn_ConsultarCanal"
+        android:nestedScrollingEnabled="true"
+        android:onClick="onClickConsultarCanal"
+        android:textColor="@color/colorButtonText"
+        android:layout_above="@+id/view"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

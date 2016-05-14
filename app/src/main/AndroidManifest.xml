@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="epiphany_soft.wtw">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.ActivityConsultarPrograma"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.ActivityDetallePelicula"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.ActivityAgregarGenero"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".Activities.ActivityRegistrarPrograma"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Activities.ActivityActualizarPelicula"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Activities.ActivityEliminarGenero"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activities.Series.ActivityDetalleSerie"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Series.ActivityActualizarSerie"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".Activities.Series.ActivityAgregarCapitulo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".Activities.Series.ActivityDetalleTemporada"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Series.ActivityActualizarCapitulo"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Series.ActivityDetalleCapitulo"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Series.ActivityAgregarTemporada"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+
+        <activity android:name=".Activities.ActivityInicioSesion"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activities.ActivityModificarUsuario"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".Activities.ActivityAgregarUsuario"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+
+        <activity android:name=".Activities.ActivityAgregarCanal"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible"/>
+
+        <activity android:name=".Activities.ActivityDetalleCanal"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>/>
+
+        <activity android:name=".Activities.ActivityConsultarCanal"
+        android:screenOrientation="portrait" />
+
+        <activity android:name=".Activities.ActivityAsociarCanal"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activities.ActivityActualizarCanal"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activities.ActivityConsultarProgramasAgenda"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:title="Inicio De Sesión"
+            />
+    </group>
+
+    <item android:title="Programa">
+        <menu>
+            <item
+                android:id="@+id/nav_consultar_series"
+                android:title="Consultar Programas" />
+        </menu>
+    </item>
+
+    <item android:title="Canal">
+        <menu>
+            <item
+                android:id="@+id/nav_consultar_canal"
+                android:title="Consultar Canal" />
+        </menu>
+    </item>
+</menu>
